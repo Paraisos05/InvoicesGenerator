@@ -1,0 +1,252 @@
+INVOICE#,INVOICE_DATE,from_who,to_who,SHIPMENT_DATE,BILLED_WEIGHT,ACTUAL WEIGHT,PIECES,SHIPMENT_TOTAL,BASE_CHARGE_AMOUNT,CHARGE_1_TYPE,CHARGE_1_AMT,CHARGE_2_TYPE,CHARGE_2_AMT,CHARGE_3_TYPE,CHARGE_3_AMT,CHARGE_4_TYPE,CHARGE_4_AMT,CHARGE_5_TYPE,CHARGE_5_AMT
+61900002XL07,11/7/2023,Department,ATTN: Fi Event,10/18/2023,76.93,50,1,283.28,211.01,Additional Handling - Length+Girth,21.15,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,44.22,,0,,0
+61900002XL07,11/7/2023,Department,ATTN: Fi Event,10/18/2023,76.93,50,1,283.28,211.01,Additional Handling - Length+Girth,21.15,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,44.22,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,35.64,35,1,19.38,16.78,Fuel Surcharge,2.6,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,4.13,4,1,11.35,9.83,Fuel Surcharge,1.52,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,4.13,4,1,11.35,9.83,Fuel Surcharge,1.52,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,@loganlrobles,10/18/2023,35,35,1,23.01,16.29,Fuel Surcharge,3.09,Residential Ground Surcharge,3.63,Third Party Billing Service,0,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,35.64,35,1,19.38,16.78,Fuel Surcharge,2.6,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,@loganlrobles,10/18/2023,7.97,6,1,16.69,10.81,Fuel Surcharge,2.25,Residential Ground Surcharge,3.63,Third Party Billing Service,0,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,35.64,35,1,19.38,16.78,Fuel Surcharge,2.6,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,35.64,35,1,19.38,16.78,Fuel Surcharge,2.6,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,4.13,4,1,11.35,9.83,Fuel Surcharge,1.52,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Simon Matthews,10/18/2023,51,51,1,60.75,21.36,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.16,,0
+61900002XL07,11/7/2023,Department,Brianna McComber,10/18/2023,56,56,1,67.21,26.96,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.02,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,4.13,4,1,11.35,9.83,Fuel Surcharge,1.52,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,35.64,35,1,19.38,16.78,Fuel Surcharge,2.6,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,35.64,35,1,19.38,16.78,Fuel Surcharge,2.6,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,4.13,4,1,11.35,9.83,Fuel Surcharge,1.52,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Pat Keenan,10/18/2023,56,56,1,79.1,37.26,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.61,,0
+61900002XL07,11/7/2023,Department,Dept of Fish & Wildlife,10/18/2023,4.13,4,1,11.35,9.83,Fuel Surcharge,1.52,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Gwynne Davis,10/18/2023,46,46,1,53.04,21.29,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7.12,,0
+61900002XL07,11/7/2023,Department,James Reynolds,10/18/2023,48,48,1,74,35.46,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.93
+61900002XL07,11/7/2023,Department,Alex Wilson,10/18/2023,7.97,5,1,14.98,9.34,Residential Ground Surcharge,3.63,Fuel Surcharge,2.01,,0,,0,,0
+61900002XL07,11/7/2023,Department,Mikel Barnes,10/18/2023,46,46,1,69.42,35.47,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.32,,0
+61900002XL07,11/7/2023,Department,Alex Wilson,10/18/2023,56,56,1,51.23,14.92,Residential Ground Surcharge,3.63,Addl. Handling weight,18.9,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,6.88,,0
+61900002XL07,11/7/2023,Department,Rudi Richmand,10/18/2023,50,50,1,71.49,37.26,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.6,,0
+61900002XL07,11/7/2023,Department,James Reynolds,10/18/2023,48,48,1,74,35.46,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.93
+61900002XL07,11/7/2023,Department,Kelley Kane,10/19/2023,63,63,1,79.22,33.38,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.63
+61900002XL07,11/7/2023,Department,"S&T California Express,Inc.",10/19/2023,63.36,59,1,59.46,23.88,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7.98,,0,,0
+61900002XL07,11/7/2023,Department,Robin J Greenslade,10/19/2023,59,59,1,82.3,40.03,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.04,,0
+61900002XL07,11/7/2023,Department,Chhat Chea,10/19/2023,59.74,24,1,75.77,40.97,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.17,,0
+61900002XL07,11/7/2023,Department,Payton Wink,10/19/2023,63,63,1,65.88,25.8,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.85,,0
+61900002XL07,11/7/2023,Department,Allison Bohr,10/19/2023,63,63,1,81.76,39.56,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.97,,0
+61900002XL07,11/7/2023,Department,Joe A Pavlic,10/19/2023,67.2,24,1,67.29,28.26,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.03
+61900002XL07,11/7/2023,Department,Kenny Ritchey,10/19/2023,63,63,1,74.62,33.38,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.01,,0
+61900002XL07,11/7/2023,Department,Kara  Stucky,10/19/2023,63,63,1,81.76,39.56,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.97,,0
+61900002XL07,11/7/2023,Department,Elizabeth Berna,10/19/2023,59,59,1,74.84,33.57,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.04,,0
+61900002XL07,11/7/2023,Department,Keena Lee,10/19/2023,63,63,1,89.7,41.06,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,12.04
+61900002XL07,11/7/2023,Department,Darin Jerome,10/19/2023,63,63,1,81.76,39.56,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.97,,0
+61900002XL07,11/7/2023,Department,Mark Steil,10/19/2023,59,59,1,75.46,28.73,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.13
+61900002XL07,11/7/2023,Department,Michele Muse,10/19/2023,67.2,24,1,75.77,40.97,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.17,,0
+61900002XL07,11/7/2023,Department,Bryan Parker,10/19/2023,40,40,1,35.91,27.46,Residential Ground Surcharge,3.63,,0,,0,Fuel Surcharge,4.82,,0
+61900002XL07,11/7/2023,Department,Justin Stout,10/19/2023,59,59,1,69.26,28.73,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.3,,0
+61900002XL07,11/7/2023,Department,Allee Butz-Gajeski,10/19/2023,63,63,1,83.49,41.06,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.2,,0
+61900002XL07,11/7/2023,Department,Nina Gomez,10/19/2023,51,51,1,67.14,26.9,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.01,,0
+61900002XL07,11/7/2023,Department,Yumiko Sato,10/19/2023,50,50,1,43.61,14.93,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,12.3,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,5.85,,0
+61900002XL07,11/7/2023,Department,Joe A Pavlic,10/19/2023,67.2,24,1,68.58,29.38,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.2
+61900002XL07,11/7/2023,Department,Joe A Pavlic,10/19/2023,67.2,24,1,68.58,29.38,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.2
+61900002XL07,11/7/2023,Department,Joe A Pavlic,10/19/2023,67.2,24,1,68.58,29.38,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.2
+61900002XL07,11/7/2023,Department,John Baldino,10/19/2023,46,46,1,69.42,35.47,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.32,,0
+61900002XL07,11/7/2023,Department,Aaron Gibson,10/19/2023,59,59,1,74.84,33.57,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.04,,0
+61900002XL07,11/7/2023,Department,Sherri Hsiu,10/19/2023,59,59,1,82.3,40.03,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.04,,0
+61900002XL07,11/7/2023,Department,Jonathan Ramirez,10/19/2023,63,63,1,83.49,41.06,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.2,,0
+61900002XL07,11/7/2023,Department,Justin Brown,10/19/2023,56,56,1,72.78,32.49,Delivery Area Surcharge,2.92,,0,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.77
+61900002XL07,11/7/2023,Department,Anita Hettum,10/19/2023,35,35,1,18.58,12.46,Residential Ground Surcharge,3.63,Fuel Surcharge,2.49,,0,,0,,0
+61900002XL07,11/7/2023,Department,Josh  Hale,10/19/2023,63.36,59,1,78.12,40.03,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.49,,0,,0
+61900002XL07,11/7/2023,Department,Melissa Asbury,10/19/2023,67.2,24,1,75.16,40.45,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.08,,0
+61900002XL07,11/7/2023,Department,Michael Varela,10/19/2023,8.96,6,1,18.49,12.38,Residential Ground Surcharge,3.63,Fuel Surcharge,2.48,,0,,0,,0
+61900002XL07,11/7/2023,Department,Valerie Evans Christensen,10/19/2023,67.2,24,1,46.8,17.69,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,12.3,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,6.28,,0
+61900002XL07,11/7/2023,Department,Melissa Asbury,10/19/2023,67.2,24,1,75.16,40.45,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.08,,0
+61900002XL07,11/7/2023,Department,Linda Givler,10/19/2023,50,50,1,43.61,14.93,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,12.3,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,5.85,,0
+61900002XL07,11/7/2023,Department,Monica Griffith,10/19/2023,35,35,1,38.3,29.52,Residential Ground Surcharge,3.63,Fuel Surcharge,5.15,,0,,0,,0
+61900002XL07,11/7/2023,Department,Michael Varela,10/19/2023,50,50,1,65.72,32.27,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.82,,0
+61900002XL07,11/7/2023,Department,Steve Mercy,10/19/2023,63.36,59,1,49.86,17.37,Addl. Handling weight,18.9,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,6.69,,0,,0
+61900002XL07,11/7/2023,Department,Phillip Cornell,10/19/2023,63,63,1,79.22,33.38,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.63
+61900002XL07,11/7/2023,Department,Michael Feldman,10/19/2023,67.2,24,1,62.38,29.38,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.37,,0
+61900002XL07,11/7/2023,Department,Taj Rossi,10/19/2023,59,59,1,63.65,23.88,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.54,,0
+61900002XL07,11/7/2023,Department,Michael Feldman,10/19/2023,67.2,24,1,62.38,29.38,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.37,,0
+61900002XL07,11/7/2023,Department,Shannon Green,10/19/2023,35,35,1,24,17.15,Residential Ground Surcharge,3.63,Fuel Surcharge,3.22,,0,,0,,0
+61900002XL07,11/7/2023,Department,Hannah Vogt,10/19/2023,63,63,1,83.49,41.06,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.2,,0
+61900002XL07,11/7/2023,Department,Kathleen Landcastle,10/19/2023,70,70,1,83.39,40.97,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.19,,0
+61900002XL07,11/7/2023,Department,Valerie Evans Christensen,10/19/2023,67.2,24,1,46.8,17.69,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,12.3,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,6.28,,0
+61900002XL07,11/7/2023,Department,Lexi King,10/20/2023,50,50,1,75.58,36.82,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.15
+61900002XL07,11/7/2023,Department,Chadwin Young,10/20/2023,70,70,1,75.69,34.3,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.16,,0
+61900002XL07,11/7/2023,Department,Marco Galindo,10/20/2023,67.2,24,1,61.08,28.26,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.19,,0
+61900002XL07,11/7/2023,Department,Keegan Harrison,10/20/2023,56,56,1,59.66,21.65,Delivery Area Surcharge,2.4,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.01,,0
+61900002XL07,11/7/2023,Department,Ryan Congiardo,10/20/2023,60,60,1,63.65,23.88,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.54,,0
+61900002XL07,11/7/2023,Department,TARA JENSEN,10/20/2023,13,13,1,23.18,11.07,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,,0,,0,Fuel Surcharge,3.11
+61900002XL07,11/7/2023,Department,Denis Glinski,10/20/2023,65,65,1,86.9,40.03,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.66
+61900002XL07,11/7/2023,Department,Adrianne Gore,10/20/2023,59,59,1,73.68,32.56,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.89,,0
+61900002XL07,11/7/2023,Department,Robynnes ranch,10/20/2023,59.74,24,1,72.66,34.3,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.75
+61900002XL07,11/7/2023,Department,Brian Cole,10/20/2023,51,51,1,73.34,26.9,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.84
+61900002XL07,11/7/2023,Department,Marco Galindo,10/20/2023,56,56,1,67.21,26.96,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.02,,0
+61900002XL07,11/7/2023,Department,Annemarie See,10/20/2023,56,56,1,74.92,37.26,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.06,,0,,0
+61900002XL07,11/7/2023,Department,Annemarie See,10/20/2023,25.52,14,1,53.95,25.71,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7.24,,0,,0
+61900002XL07,11/7/2023,Department,Sharon Marie  Brown,10/20/2023,50,50,1,53.45,21.65,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7.17,,0
+61900002XL07,11/7/2023,Department,TARA JENSEN,10/20/2023,59,59,1,73.61,27.13,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.88
+61900002XL07,11/7/2023,Department,Patricia Linendoll,10/20/2023,69,69,1,76.34,34.87,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.24,,0
+61900002XL07,11/7/2023,Department,Karen  Hartline,10/20/2023,51,51,1,78.15,36.43,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.49,,0
+61900002XL07,11/7/2023,Department,Bernard Arnold,10/20/2023,55,55,1,79.1,37.26,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.61,,0
+61900002XL07,11/7/2023,Department,Jennifer Hammond,10/20/2023,53.46,50,1,67.29,37.26,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.03,,0,,0
+61900002XL07,11/7/2023,Department,Micah Siegel,10/20/2023,71,71,1,83.49,41.06,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.2,,0
+61900002XL07,11/7/2023,Department,Adrianne Gore,10/20/2023,59,59,1,73.68,32.56,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.89,,0
+61900002XL07,11/7/2023,Department,Corey McKanna,10/20/2023,48,48,1,64.98,31.63,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.72,,0
+61900002XL07,11/7/2023,Department,Karen McCoy,10/20/2023,63,63,1,74.62,33.38,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.01,,0
+61900002XL07,11/7/2023,Department,Marco Galindo,10/20/2023,43.2,20,1,33.17,25.08,Residential Ground Surcharge,3.63,Fuel Surcharge,4.46,,0,,0,,0
+61900002XL07,11/7/2023,Department,Michael Ireland,10/20/2023,48,48,1,69.41,35.47,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.31,,0
+61900002XL07,11/7/2023,Department,Kevin Schmidt,10/20/2023,59,59,1,69.26,28.73,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.3,,0
+61900002XL07,11/7/2023,Department,Lindsay Rella,10/20/2023,56,56,1,79.1,37.26,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.61,,0
+61900002XL07,11/7/2023,Department,Sarah Smith,10/20/2023,51,51,1,60.75,21.36,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.16,,0
+61900002XL07,11/7/2023,Department,Henry Hanna,10/20/2023,75,75,1,51.61,16.76,Residential Ground Surcharge,3.63,Addl. Handling weight,17.4,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,6.92,,0
+61900002XL07,11/7/2023,Department,Caitlin Plazony,10/20/2023,35,35,1,38.3,29.52,Residential Ground Surcharge,3.63,Fuel Surcharge,5.15,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dale Clements,10/20/2023,63,63,1,81.76,39.56,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.97,,0
+61900002XL07,11/7/2023,Department,Joseph Hammons,10/20/2023,72,72,1,71.74,30.88,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.63,,0
+61900002XL07,11/7/2023,Department,Kelly Cushing,10/20/2023,67,67,1,63.72,23.93,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.56,,0
+61900002XL07,11/7/2023,Department,Brent Garrison,10/20/2023,25.52,14,1,54.47,22.53,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7.31,,0
+61900002XL07,11/7/2023,Department,Brent Garrison,10/20/2023,61,61,1,73.73,32.6,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.9,,0
+61900002XL07,11/7/2023,Department,WT McNicholas Jr,10/20/2023,55,55,1,78.63,36.85,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.55,,0
+61900002XL07,11/7/2023,Department,Jason Silagi,10/20/2023,64,64,1,82.31,40.03,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.05,,0
+61900002XL07,11/7/2023,Department,Steven Mohr,10/20/2023,53,53,1,46.98,14.87,Addl. Handling weight,18.9,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,6.31,,0,,0
+61900002XL07,11/7/2023,Department,Lauren Shimasaki,10/20/2023,70,70,1,75.68,34.29,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.16,,0
+61900002XL07,11/7/2023,Department,Genevieve  Lohr,10/20/2023,63,63,1,83.49,41.06,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.2,,0
+61900002XL07,11/7/2023,Department,Scott Lowery?,10/20/2023,59,59,1,80.64,38.59,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.82,,0
+61900002XL07,11/7/2023,Department,Henry Hanna,10/20/2023,4,4,1,14.98,9.34,Residential Ground Surcharge,3.63,Fuel Surcharge,2.01,,0,,0,,0
+61900002XL07,11/7/2023,Department,Lauren Shimasaki,10/20/2023,50,50,1,65.72,32.27,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.82,,0
+61900002XL07,11/7/2023,Department,Daniel  Cason,10/20/2023,56,56,1,61.08,21.65,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.2,,0
+61900002XL07,11/7/2023,Department,Raul Jauregui,10/20/2023,48,48,1,53.04,21.29,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7.12,,0
+61900002XL07,11/7/2023,Department,Scott Lowery?,10/20/2023,13,13,1,22.49,15.85,Residential Ground Surcharge,3.63,,0,,0,Fuel Surcharge,3.01,,0
+61900002XL07,11/7/2023,Department,Jonathan Pennington,10/20/2023,63,63,1,88.09,41.06,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.82
+61900002XL07,11/7/2023,Department,Aric Segedi,10/20/2023,56,56,1,78.19,32.49,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.49
+61900002XL07,11/7/2023,Department,Matt Harris,10/20/2023,62,62,1,82.31,40.03,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.05,,0
+61900002XL07,11/7/2023,Department,Nick Hamer,10/20/2023,52,52,1,73.54,32.44,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.87,,0
+61900002XL07,11/7/2023,Department,Jason Heffernan,10/20/2023,46,46,1,63.73,26.57,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.55
+61900002XL07,11/7/2023,Department,Naomi Gerisch,10/21/2023,63,63,1,76.34,34.87,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.24,,0
+61900002XL07,11/7/2023,Department,Barbara  rusiniak,10/21/2023,70,70,1,89.59,40.97,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,12.02
+61900002XL07,11/7/2023,Department,The Dog Haus K9 Solutions L.L.C,10/21/2023,63,63,1,81.35,34.87,Residential Ground Surcharge,3.31,Delivery Area Surcharge,4.65,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.92
+61900002XL07,11/7/2023,Department,Stacie Vasi,10/21/2023,61,61,1,69.86,23.88,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.38
+61900002XL07,11/7/2023,Department,Laura Bugg,10/21/2023,67,67,1,81.23,33.73,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.9
+61900002XL07,11/7/2023,Department,Milan Lubanko,10/21/2023,59,59,1,63.65,23.88,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.54,,0
+61900002XL07,11/7/2023,Department,Michelle Cawley,10/21/2023,65,65,1,88.5,40.03,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.87
+61900002XL07,11/7/2023,Department,Kaija Kunttu,10/21/2023,70,70,1,75.69,34.3,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.16,,0
+61900002XL07,11/7/2023,Department,Sarah Kelley,10/21/2023,51,51,1,82.75,36.43,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.11
+61900002XL07,11/7/2023,Department,Sabrina Martens,10/21/2023,59,59,1,69.26,28.73,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.3,,0
+61900002XL07,11/7/2023,Department,Luis Quintas,10/21/2023,70,70,1,83.39,40.97,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.19,,0
+61900002XL07,11/7/2023,Department,Greg Sealey,10/21/2023,63,63,1,81.76,39.56,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.97,,0
+61900002XL07,11/7/2023,Department,Anthony Messer,10/21/2023,50,50,1,71.49,37.26,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.6,,0
+61900002XL07,11/7/2023,Department,Sawyer Leffingwell,10/21/2023,12.96,9,1,21.18,14.72,Residential Ground Surcharge,3.63,Fuel Surcharge,2.83,,0,,0,,0
+61900002XL07,11/7/2023,,Sawyer Leffingwell,10/21/2023,0,,,1,0,Shipping Charge Correction Audit Fee,1,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Finn Menke,10/21/2023,59,59,1,82.3,40.03,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.04,,0
+61900002XL07,11/7/2023,Department,John Pena,10/21/2023,12,12,1,16.67,10.8,Residential Ground Surcharge,3.63,Fuel Surcharge,2.24,,0,,0,,0
+61900002XL07,11/7/2023,Department,Danielle Paparatto,10/21/2023,56,56,1,67.21,26.96,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.02,,0
+61900002XL07,11/7/2023,Department,Steve Mercy,10/21/2023,11.52,9,1,10.79,9.34,Fuel Surcharge,1.45,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,James McClure,10/21/2023,63,63,1,96.01,39.56,Residential Ground Surcharge,3.63,Delivery Area Surcharge,13.05,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,12.17
+61900002XL07,11/7/2023,Department,Kyle Roach,10/21/2023,46,46,1,74.02,35.47,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.94
+61900002XL07,11/7/2023,Department,Steve Mercy,10/21/2023,13,13,1,10.78,9.34,Fuel Surcharge,1.44,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Kait Seryak,10/21/2023,63,63,1,74.62,33.38,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.01,,0
+61900002XL07,11/7/2023,Department,Heavenly pups spa llc,10/21/2023,56,56,1,78.19,32.49,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.49
+61900002XL07,11/7/2023,Department,On Command LLC,10/21/2023,90,19,1,198.58,24.53,Peak Surcharge - Large Package,74.9,,0,Fuel Surcharge,26.65,Large Package Commercial,72.5,,0
+61900002XL07,11/7/2023,Department,John Pena,10/21/2023,11,11,1,16.53,10.68,Residential Ground Surcharge,3.63,Fuel Surcharge,2.22,,0,,0,,0
+61900002XL07,11/7/2023,Department,Audrey Wilton,10/21/2023,63,63,1,82.55,34.87,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.08
+61900002XL07,11/7/2023,Department,James Wallingford,10/21/2023,51,51,1,52.2,11.9,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,17.4,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7
+61900002XL07,11/7/2023,Department,Devon Lodge,10/22/2023,66,66,1,86.91,40.03,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.67
+61900002XL07,11/7/2023,Department,Andrew Ziegler,10/22/2023,65,65,1,74.72,33.47,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.02,,0
+61900002XL07,11/7/2023,Department,Angelis Gray,10/22/2023,70,70,1,83.39,40.97,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.19,,0
+61900002XL07,11/7/2023,Department,August Price,10/22/2023,53,53,1,60.9,21.5,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.17,,0
+61900002XL07,11/7/2023,Department,Christie Marquez,10/22/2023,67,67,1,63.72,23.93,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.56,,0
+61900002XL07,11/7/2023,Department,Regine Turner,10/22/2023,11.52,7,1,26.73,15.52,Residential Ground Surcharge,3.63,Delivery Area Surcharge,3.98,Fuel Surcharge,3.6,,0,,0
+61900002XL07,11/7/2023,,Regine Turner,10/22/2023,0,,,1,0,Shipping Charge Correction Audit Fee,1,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Jessica Hinrichs,10/22/2023,70,70,1,83.39,40.97,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.19,,0
+61900002XL07,11/7/2023,Department,Kari Roeser,10/22/2023,46,46,1,59.14,26.57,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7.94,,0
+61900002XL07,11/7/2023,Department,Jessica Booth,10/22/2023,36,36,1,38.29,29.52,Residential Ground Surcharge,3.63,Fuel Surcharge,5.14,,0,,0,,0
+61900002XL07,11/7/2023,Department,Lyndsey Latta,10/22/2023,48,48,1,64.98,31.63,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.72,,0
+61900002XL07,11/7/2023,Department,Matthew McAlees,10/22/2023,63,63,1,83.49,41.06,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.2,,0
+61900002XL07,11/7/2023,Department,Jerod Nelson,10/22/2023,63,63,1,63.61,23.84,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.54,,0
+61900002XL07,11/7/2023,Department,Michael Baker,10/22/2023,61,61,1,87.42,39.08,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.74
+61900002XL07,11/7/2023,Department,Amanda Pickrell,10/22/2023,56,56,1,73.58,32.48,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.87,,0
+61900002XL07,11/7/2023,Department,Amanda Pickrell,10/22/2023,24.96,13,1,23.38,16.62,Residential Ground Surcharge,3.63,Fuel Surcharge,3.13,,0,,0,,0
+61900002XL07,11/7/2023,Department,Brady Bergeron,10/22/2023,59,59,1,82.3,40.03,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.04,,0
+61900002XL07,11/7/2023,Department,Adam Carter,10/22/2023,46,46,1,52.81,17.53,Residential Ground Surcharge,3.63,Delivery Area Surcharge,5.37,Additional Handling - Length+Girth,12.3,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7.08
+61900002XL07,11/7/2023,Department,KATIE BURKE,10/22/2023,48,48,1,43.47,14.8,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,12.3,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,5.84,,0
+61900002XL07,11/7/2023,Department,Sarah Reeves,10/22/2023,63,63,1,81.76,39.56,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.97,,0
+61900002XL07,11/7/2023,Department,ATTN: Fi Event,10/23/2023,19,19,1,79.91,68,Fuel Surcharge,11.91,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Matthieu  Mutter,10/23/2023,70,70,1,83.21,40.97,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,11.01,,0
+61900002XL07,11/7/2023,Department,Ken Johnson,10/23/2023,46,46,1,52.92,21.29,Residential Ground Surcharge,3.63,Additional Handling - Length+Girth,14.1,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7,,0
+61900002XL07,11/7/2023,Department,Melissa Kelly,10/23/2023,51,51,1,60.61,21.36,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,8.02,,0
+61900002XL07,11/7/2023,Department,Craig Grasty,10/23/2023,70,70,1,71.34,34.3,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,9.44,,0,,0
+61900002XL07,11/7/2023,Department,Elizabeth Rahm,10/23/2023,46,46,1,40.64,31.63,Residential Ground Surcharge,3.63,,0,,0,Fuel Surcharge,5.38,,0
+61900002XL07,11/7/2023,,Elizabeth Rahm,10/23/2023,0,,,1,0,Shipping Charge Correction Audit Fee,1,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Hugo Amarillas,10/23/2023,6,6,1,15.92,10.19,Residential Ground Surcharge,3.63,Fuel Surcharge,2.1,,0,,0,,0
+61900002XL07,11/7/2023,Department,Evelyn Raspotnik,10/23/2023,63,63,1,81.59,39.56,Residential Ground Surcharge,3.63,Addl. Handling weight,20.7,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,10.8,,0
+61900002XL07,11/7/2023,Department,Jacob McCullough,10/23/2023,63,63,1,53.21,16.74,Residential Ground Surcharge,3.63,Addl. Handling weight,18.9,Peak Surcharge - Additional Handling,6.9,Fuel Surcharge,7.04,,0
+61900002XL07,11/7/2023,Department,Shawn Merz,10/23/2023,35,35,1,38.21,29.52,Residential Ground Surcharge,3.63,Fuel Surcharge,5.06,,0,,0,,0
+61900002XL07,11/7/2023,Department,Edward  Torgersen,10/27/2023,40,40,1,37.67,14.28,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,5.03,,0
+61900002XL07,11/7/2023,Department,Anthony Montalvo,10/27/2023,46,46,1,49.21,24.34,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.51,,0
+61900002XL07,11/7/2023,,HEATERCRAFT,10/27/2023,63.36,0,1,48.73,19.88,Delivery Area Surcharge,2.4,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.45,,0
+61900002XL07,11/7/2023,Department,Anthony Montalvo,10/27/2023,46,46,1,49.21,24.34,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.51,,0
+61900002XL07,11/7/2023,Department,Pat Colombo,10/27/2023,11,11,1,15.36,10.02,Residential Ground Surcharge,3.31,Fuel Surcharge,2.03,,0,,0,,0
+61900002XL07,11/7/2023,Department,Patrick Myers,10/27/2023,11,11,1,16.36,10.89,Residential Ground Surcharge,3.31,Fuel Surcharge,2.16,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dawn Blattner,10/27/2023,62,62,1,56.43,22.22,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,7.46
+61900002XL07,11/7/2023,Department,Dawn Blattner,10/27/2023,52,52,1,55.37,21.3,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,7.32
+61900002XL07,11/7/2023,Department,Ryan  Smithson,10/27/2023,55,55,1,45.4,13.99,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Addl. Handling weight,14.17,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.01
+61900002XL07,11/7/2023,Department,Dexter Focht,10/27/2023,17,17,1,28.69,9.34,Residential Ground Surcharge,3.31,Delivery Area Surcharge,13.05,Fuel Surcharge,2.99,,0,,0
+61900002XL07,11/7/2023,Department,Patrick Myers,10/27/2023,12,12,1,16.96,11.4,Residential Ground Surcharge,3.31,Fuel Surcharge,2.25,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dawn Blattner,10/27/2023,28.36,14,1,43.59,16.03,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,5.76
+61900002XL07,11/7/2023,,Dawn Blattner,10/27/2023,0,,,1,0,Shipping Charge Correction Audit Fee,1,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Patrick Myers,10/27/2023,58,58,1,61.5,30.05,Residential Ground Surcharge,3.31,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,8.14,,0
+61900002XL07,11/7/2023,Department,Pat Colombo,10/27/2023,14,14,1,17.47,11.85,Residential Ground Surcharge,3.31,Fuel Surcharge,2.31,,0,,0,,0
+61900002XL07,11/7/2023,Department,Dexter Focht,10/27/2023,2,2,1,28.69,9.34,Residential Ground Surcharge,3.31,Delivery Area Surcharge,13.05,Fuel Surcharge,2.99,,0,,0
+61900002XL07,11/7/2023,Department,Dawn Blattner,10/27/2023,24.49,13,1,41.01,13.78,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Fuel Surcharge,5.43,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48
+61900002XL07,11/7/2023,,Dawn Blattner,10/27/2023,0,,,1,0,Shipping Charge Correction Audit Fee,1,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Valerie Evans Christensen,10/28/2023,6,6,1,14.58,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,1.93,,0,,0,,0
+61900002XL07,11/7/2023,Department,Valerie Evans Christensen,10/28/2023,11,11,1,14.58,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,1.93,,0,,0,,0
+61900002XL07,11/7/2023,Department,Shannon Welk,10/30/2023,77.7,64,1,412.9,254.47,Residential Express Surcharge,5.85,Delivery Area Surcharge,5.55,Addl. Handling weight,25.87,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,116.68
+61900002XL07,11/7/2023,,Shannon Welk,10/30/2023,0,,,1,0,Shipping Charge Correction Audit Fee,1,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Valerie Tran,10/30/2023,63,63,1,53.99,18.87,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,8.37
+61900002XL07,11/7/2023,Department,Sydney Ryan,10/30/2023,46,46,1,33.55,11.38,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,9.22,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,5.16,,0
+61900002XL07,11/7/2023,Department,Lauren Hennessy,10/30/2023,56,56,1,48.01,17.13,Residential Ground Surcharge,3.31,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,7.57,,0
+61900002XL07,11/7/2023,Department,Amanda Williford,10/30/2023,63,63,1,50.18,18.87,Residential Ground Surcharge,3.31,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,8,,0
+61900002XL07,11/7/2023,Department,Aria Cardinale,10/30/2023,59,59,1,48.68,17.67,Residential Ground Surcharge,3.31,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,7.7,,0
+61900002XL07,11/7/2023,Department,Brittany Lopez,10/30/2023,48,48,1,41.94,16.85,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.73,,0
+61900002XL07,11/7/2023,Department,Lauren Hennessy,10/30/2023,7.2,5,1,14.82,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.17,,0,,0,,0
+61900002XL07,11/7/2023,Department,Ashley Newton,10/30/2023,7.97,4,1,14.82,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.17,,0,,0,,0
+61900002XL07,11/7/2023,Department,Robert  Oleary,10/30/2023,7.97,5,1,18.63,9.34,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Fuel Surcharge,2.54,,0,,0
+61900002XL07,11/7/2023,Department,Keith Hock,10/30/2023,38.4,20,1,24.87,14.25,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Fuel Surcharge,3.87,,0,,0
+61900002XL07,11/7/2023,Department,Aria Cardinale,10/30/2023,7.97,6,1,14.82,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.17,,0,,0,,0
+61900002XL07,11/7/2023,Department,Terina Li,10/30/2023,46,46,1,51.29,24.34,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,8.59,,0
+61900002XL07,11/7/2023,Department,Amparo Davila,10/30/2023,59,59,1,58.81,25.78,Residential Ground Surcharge,3.31,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,9.72,,0
+61900002XL07,11/7/2023,Department,Medford Police Department,10/30/2023,17,10,1,26.65,9.34,Additional Handling - Length+Girth,9.22,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,3.61,,0,,0
+61900002XL07,11/7/2023,Department,Derek DeRoche,10/30/2023,63,63,1,63.42,26.42,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,10.25
+61900002XL07,11/7/2023,Department,TERISA PEPIOT,10/30/2023,7.97,4,1,14.68,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.03,,0,,0,,0
+61900002XL07,11/7/2023,Department,Zachary Eynon,10/31/2023,59,59,1,42.7,14.13,Residential Ground Surcharge,3.31,Addl. Handling weight,14.17,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.61,,0
+61900002XL07,11/7/2023,Department,Bogdan Vasilescu,10/31/2023,7.97,5,1,14.61,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,1.96,,0,,0,,0
+61900002XL07,11/7/2023,Department,Sarah Semba,10/31/2023,7.97,4,1,14.98,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.33,,0,,0,,0
+61900002XL07,11/7/2023,Department,Shara Di Valerio,10/31/2023,2,2,1,14.61,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,1.96,,0,,0,,0
+61900002XL07,11/7/2023,Department,rocking l ranch,10/31/2023,50,50,1,40.88,14.81,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Additional Handling - Length+Girth,9.22,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,5.62
+61900002XL07,11/7/2023,Department,Sarah Semba,10/31/2023,50,50,1,52.81,25.55,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,8.9,,0
+61900002XL07,11/7/2023,Department,Zachary Eynon,10/31/2023,59,59,1,42.7,14.13,Residential Ground Surcharge,3.31,Addl. Handling weight,14.17,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.61,,0
+61900002XL07,11/7/2023,Department,Zachary Eynon,10/31/2023,59,59,1,42.7,14.13,Residential Ground Surcharge,3.31,Addl. Handling weight,14.17,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.61,,0
+61900002XL07,11/7/2023,Department,Zachary Eynon,10/31/2023,59,59,1,42.7,14.13,Residential Ground Surcharge,3.31,Addl. Handling weight,14.17,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.61,,0
+61900002XL07,11/7/2023,Department,Geno Sauers,10/31/2023,7.97,5,1,15.36,9.58,Residential Ground Surcharge,3.31,Fuel Surcharge,2.47,,0,,0,,0
+61900002XL07,11/7/2023,Department,rocking l ranch,10/31/2023,13.66,3,1,34.41,9.34,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Fuel Surcharge,4.62,Additional Handling - Length,9.22,Peak Surcharge - Additional Handling,4.48
+61900002XL07,11/7/2023,,chad lindula,10/31/2023,0,,,1,0,Shipping Charge Correction Audit Fee,1,,0,,0,,0,,0
+61900002XL07,11/7/2023,Department,Kayla Simkins,10/31/2023,7.97,5,1,14.82,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.17,,0,,0,,0
+61900002XL07,11/7/2023,Department,Mikah Seaboy,10/31/2023,63,63,1,50.18,18.87,Residential Ground Surcharge,3.31,Addl. Handling weight,15.52,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,8,,0
+61900002XL07,11/7/2023,Department,Katie Zager,10/31/2023,2,2,1,14.68,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.03,,0,,0,,0
+61900002XL07,11/7/2023,Department,Vitaly Herbert,10/31/2023,50,50,1,47.36,21.19,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,7.81,,0
+61900002XL07,11/7/2023,Department,Marisha Mets,10/31/2023,48,48,1,47.16,21.03,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,7.77,,0
+61900002XL07,11/7/2023,Department,DANIEL LEMMONS,10/31/2023,7.97,2,1,14.68,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.03,,0,,0,,0
+61900002XL07,11/7/2023,Department,Charles Costin,10/31/2023,7.97,4,1,14.68,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.03,,0,,0,,0
+61900002XL07,11/7/2023,Department,Deborah Brown,11/1/2023,13.66,5,1,15.19,9.62,Residential Ground Surcharge,3.31,Fuel Surcharge,2.26,,0,,0,,0
+61900002XL07,11/7/2023,Department,Marisha Mets,11/1/2023,7.97,5,1,14.87,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.22,,0,,0,,0
+61900002XL07,11/7/2023,Department,Pedro Avina,11/1/2023,7.97,3,1,14.82,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.17,,0,,0,,0
+61900002XL07,11/7/2023,Department,Maureen O?Marro,11/1/2023,7.97,4,1,14.98,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.33,,0,,0,,0
+61900002XL07,11/7/2023,Department,Pedro Avina,11/1/2023,7.97,6,1,14.82,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.17,,0,,0,,0
+61900002XL07,11/7/2023,Department,Maureen O?Marro,11/1/2023,7.97,4,1,14.98,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.33,,0,,0,,0
+61900002XL07,11/7/2023,Department,Paul Perez,11/1/2023,15,15,1,35.96,9.34,Residential Ground Surcharge,3.31,Delivery Area Surcharge,3.44,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,4.82
+61900002XL07,11/7/2023,Department,Michael Farrugia,11/1/2023,7.97,5,1,14.98,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.33,,0,,0,,0
+61900002XL07,11/7/2023,Department,Connor Sewing,11/1/2023,44.72,17,1,50.23,24.08,Residential Ground Surcharge,3.31,Additional Handling - Length+Girth,10.57,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,7.79,,0
+61900002XL07,11/7/2023,Department,BRIAN KIM,11/2/2023,59,59,1,39.89,11.88,Residential Ground Surcharge,3.31,Addl. Handling weight,14.17,Peak Surcharge - Additional Handling,4.48,Fuel Surcharge,6.05,,0
+61900002XL07,11/7/2023,Department,Timothy Myles,11/2/2023,15,15,1,14.68,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,2.03,,0,,0,,0
+61900002XL07,11/7/2023,Department,Linda Givler,11/3/2023,11,11,1,14.61,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,1.96,,0,,0,,0
+61900002XL07,11/7/2023,Department,Linda Givler,11/3/2023,12,12,1,14.62,9.34,Residential Ground Surcharge,3.31,Fuel Surcharge,1.97,,0,,0,,0
