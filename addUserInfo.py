@@ -8,7 +8,7 @@ df = pd.read_csv('11_07_2023-61900002XL07.csv')
 conn = pyodbc.connect(
     'Driver={SQL Server};'
     'Server=localhost;'
-    'Database=AssuremPro-bak27Dec2023;'
+    'Database=esurex;'
     'Trusted_Connection=yes;'
 )
 

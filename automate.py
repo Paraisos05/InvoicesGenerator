@@ -21,58 +21,82 @@ class Invoice:
 class CSVParser:
     def __init__(self, csv_name: str, logo_url: str) -> None:
         self.field_names = (
-            'Invoice Number',
-            'Invoice Date',
-            'Airbill',
-            'Bill of Lading',
-            'Shipper Account #',
-            'Shipper Account Name',
-            'Shipper Attention',
-            'Shipper Address 1',
-            'Shipper Address 2',
-            'Shipper City',
-            'Shipper State',
-            'Shipper ZIP Code',
-            'Shipper Reference',
-            'Consignee Name',  # Updated to 'to_who'
-            'Consignee Attention',
-            'Consignee Address 1',
-            'Consignee Address 2',
-            'Consignee City',
-            'Consignee State',
-            'Consignee ZIP Code',
-            'Consignee Country Code',
-            'Third Party Account #',
-            'Third Party Account Name',
-            'Third Party Address',
-            'Third Party Address 2',  # Updated from 'Third Party Address'
-            'Third Party City',
-            'Third Party State',
-            'Third Party ZIP Code',
-            'Shipment Date',
+            'INVOICE #',
+            'INVOICE DATE',
+            'AIRBILL #',
+            'BILL OF LADING',
+            'SHIPPER ACCOUNT #',
+            'SHIPPER ACCOUNT NAME',
+            'SHIPPER ATTENTION',
+            'SHIPPER ADDRESS 1',
+            'SHIPPER ADDRESS 2',
+            'SHIPPER CITY',
+            'SHIPPER STATE',
+            'SHIPPER ZIP CODE',
+            'SHIPPER REFERENCE',
+            'CONSIGNEE NAME',
+            'CONSIGNEE ATTENTION',
+            'CONSIGNEE ADDRESS 1',
+            'CONSIGNEE ADDRESS 2',
+            'CONSIGNEE CITY',
+            'CONSIGNEE STATE',
+            'CONSIGNEE ZIP CODE',
+            'CONSIGNEE COUNTRY CODE',
+            'THIRD PARTY ACCOUNT #',
+            'THIRD PARTY ACCOUNT NAME',
+            'THIRD PARTY ADDRESS',
+            'THIRD PARTY ADDRESS.1',
+            'THIRD PARTY CITY',
+            'THIRD PARTY STATE',
+            'THIRD PARTY ZIP CODE',
+            'SHIPMENT DATE',
             'PO #',
-            'Cust Inv #',
-            'Dept #',
-            'Product Code',
-            'Zone',
-            'Billed Weight',
-            'Actual Weight',
-            'Dimensional Weight',
-            'Pieces',
-            'Dimensions',
-            'Base Charge Type',
-            'Shipment Total',
-            'Base Charge Amount',
-            'Charge 1 Type',
-            'Charge 1 Amount',
-            'Charge 2 Type',
-            'Charge 2 Amount',
-            'Charge 3 Type',
-            'Charge 3 Amount',
-            'Charge 4 Type',
-            'Charge 4 Amount',
-            'Charge 5 Type',
-            'Charge 5 Amount'
+            'CUST INV #',
+            'DEPT #',
+            'PRODUCT CODE',
+            'ZONE',
+            'BILLED WEIGHT',
+            'ACTUAL WEIGHT',
+            'DIMENSIONAL WEIGHT',
+            'PIECES',
+            'DIMENSIONS',
+            'BASE CHARGE TYPE',
+            'SHIPMENT TOTAL',
+            'BASE CHARGE AMOUNT',
+            'CHARGE 1 TYPE',
+            'CHARGE 1 AMT',
+            'CHARGE 2 TYPE',
+            'CHARGE 2 AMT',
+            'CHARGE 3 TYPE',
+            'CHARGE 3 AMT',
+            'CHARGE 4 TYPE',
+            'CHARGE 4 AMT',
+            'CHARGE 5 TYPE',
+            'CHARGE 5 AMT',
+            'CHARGE 6 TYPE',
+            'CHARGE 6 AMT',
+            'CHARGE 7 TYPE',
+            'CHARGE 7 AMT',
+            'CHARGE 8 TYPE',
+            'CHARGE 8 AMT',
+            'CREDIT 1 DESCRIPTION',
+            'CREDIT 1 AMT',
+            'CREDIT 2 DESCRIPTION',
+            'CREDIT 2 AMT',
+            'CREDIT 3 DESCRIPTION',
+            'CREDIT 3 AMT',
+            'REFERENCE 2',
+            'REFERENCE 3',
+            'REFERENCE 4',
+            'REFERENCE 5',
+            'CUSTOMERID',
+            'SCAC',
+            'CLASS',
+            'CHARGENOTES',
+            'RECEIVEDBY',
+            'RECEIVEDATE',
+            'FULL_NAME',
+            'EMAIL'
         )
         self.csv_name = csv_name
         self.logo_url = logo_url
@@ -90,8 +114,8 @@ class CSVParser:
                 # Extract charge details from columns
                 charges = []
                 for i in range(1, 6):
-                    old_charge_type = f'Charge {i} Type'
-                    old_charge_amt = f'Charge {i} Amount'
+                    old_charge_type = f'CHARGE {i} TYPE'
+                    old_charge_amt = f'CHARGE {i} AMT'
                     new_charge_type = row.get(old_charge_type, '')
                     new_charge_amt = row.get(old_charge_amt, '')
                     if new_charge_type and new_charge_amt:
@@ -102,11 +126,11 @@ class CSVParser:
                         })
 
                 invoice_obj = Invoice(
-                    from_who=row['Airbill'],  # Use 'Airbill' as the key
-                    to_who=row['Consignee Name'],  # Use 'Consignee Name' as the key
+                    from_who=row['FULL_NAME'],  # Use 'FULL_NAME' as the key
+                    to_who=row['CONSIGNEE NAME'],  # Use 'CONSIGNEE NAME' as the key
                     logo=self.logo_url,
-                    number=row['Invoice Number'],  # Use 'Invoice Number' as the key
-                    date=row['Invoice Date'],  # Use 'Invoice Date' as the key
+                    number=row['INVOICE #'],  # Use 'INVOICE #' as the key
+                    date=row['INVOICE DATE'],  # Use 'INVOICE DATE' as the key
                     due_date='',  # You can fill this in if you have it in your data
                     items=charges,  # Use the extracted charges as items
                     notes=''  # You can fill this in if you have it in your data
@@ -146,7 +170,7 @@ class ApiConnector:
 
 def main(csv_name: str = typer.Argument('your_output.csv')):
     # Check if the output directory exists, and if not, create it
-    output_directory = 'D:/GitHub/OnlineVIews/InvoiceAutomator/invoices'
+    output_directory = 'D:\GitHub\Freelancer\InvoicesGenerator\invoices'
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
     
