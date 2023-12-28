@@ -21,26 +21,58 @@ class Invoice:
 class CSVParser:
     def __init__(self, csv_name: str, logo_url: str) -> None:
         self.field_names = (
-            'INVOICE#',
-            'INVOICE_DATE',
-            'from_who',
-            'to_who',
-            'SHIPMENT_DATE',
-            'BILLED_WEIGHT',
-            'ACTUAL WEIGHT',
-            'PIECES',
-            'SHIPMENT_TOTAL',
-            'BASE_CHARGE_AMOUNT',
-            'CHARGE_1_TYPE',
-            'CHARGE_1_AMT',
-            'CHARGE_2_TYPE',
-            'CHARGE_2_AMT',
-            'CHARGE_3_TYPE',
-            'CHARGE_3_AMT',
-            'CHARGE_4_TYPE',
-            'CHARGE_4_AMT',
-            'CHARGE_5_TYPE',
-            'CHARGE_5_AMT'
+            'Invoice Number',
+            'Invoice Date',
+            'Airbill',
+            'Bill of Lading',
+            'Shipper Account #',
+            'Shipper Account Name',
+            'Shipper Attention',
+            'Shipper Address 1',
+            'Shipper Address 2',
+            'Shipper City',
+            'Shipper State',
+            'Shipper ZIP Code',
+            'Shipper Reference',
+            'Consignee Name',  # Updated to 'to_who'
+            'Consignee Attention',
+            'Consignee Address 1',
+            'Consignee Address 2',
+            'Consignee City',
+            'Consignee State',
+            'Consignee ZIP Code',
+            'Consignee Country Code',
+            'Third Party Account #',
+            'Third Party Account Name',
+            'Third Party Address',
+            'Third Party Address 2',  # Updated from 'Third Party Address'
+            'Third Party City',
+            'Third Party State',
+            'Third Party ZIP Code',
+            'Shipment Date',
+            'PO #',
+            'Cust Inv #',
+            'Dept #',
+            'Product Code',
+            'Zone',
+            'Billed Weight',
+            'Actual Weight',
+            'Dimensional Weight',
+            'Pieces',
+            'Dimensions',
+            'Base Charge Type',
+            'Shipment Total',
+            'Base Charge Amount',
+            'Charge 1 Type',
+            'Charge 1 Amount',
+            'Charge 2 Type',
+            'Charge 2 Amount',
+            'Charge 3 Type',
+            'Charge 3 Amount',
+            'Charge 4 Type',
+            'Charge 4 Amount',
+            'Charge 5 Type',
+            'Charge 5 Amount'
         )
         self.csv_name = csv_name
         self.logo_url = logo_url
@@ -58,21 +90,23 @@ class CSVParser:
                 # Extract charge details from columns
                 charges = []
                 for i in range(1, 6):
-                    charge_type = row.get(f'CHARGE_{i}_TYPE', '')
-                    charge_amt = row.get(f'CHARGE_{i}_AMT', '')
-                    if charge_type and charge_amt:
+                    old_charge_type = f'Charge {i} Type'
+                    old_charge_amt = f'Charge {i} Amount'
+                    new_charge_type = row.get(old_charge_type, '')
+                    new_charge_amt = row.get(old_charge_amt, '')
+                    if new_charge_type and new_charge_amt:
                         charges.append({
-                            'name': charge_type,
+                            'name': new_charge_type,
                             'quantity': 1,
-                            'unit_cost': float(charge_amt)
+                            'unit_cost': float(new_charge_amt)
                         })
 
                 invoice_obj = Invoice(
-                    from_who=row['from_who'],
-                    to_who=row['to_who'],
+                    from_who=row['Airbill'],  # Use 'Airbill' as the key
+                    to_who=row['Consignee Name'],  # Use 'Consignee Name' as the key
                     logo=self.logo_url,
-                    number=row['INVOICE#'],  # Use 'INVOICE#' as the key
-                    date=row['INVOICE_DATE'],
+                    number=row['Invoice Number'],  # Use 'Invoice Number' as the key
+                    date=row['Invoice Date'],  # Use 'Invoice Date' as the key
                     due_date='',  # You can fill this in if you have it in your data
                     items=charges,  # Use the extracted charges as items
                     notes=''  # You can fill this in if you have it in your data
@@ -110,7 +144,7 @@ class ApiConnector:
         else:
             typer.echo("Fail :", r.text)
 
-def main(csv_name: str = typer.Argument('mod3.csv')):
+def main(csv_name: str = typer.Argument('your_output.csv')):
     # Check if the output directory exists, and if not, create it
     output_directory = 'D:/GitHub/OnlineVIews/InvoiceAutomator/invoices'
     if not os.path.exists(output_directory):
