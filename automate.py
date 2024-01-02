@@ -20,84 +20,85 @@ class Invoice:
 
 class CSVParser:
     def __init__(self, csv_name: str, logo_url: str) -> None:
-        self.field_names = (
-            'INVOICE #',
-            'INVOICE DATE',
-            'AIRBILL #',
-            'BILL OF LADING',
-            'SHIPPER ACCOUNT #',
-            'SHIPPER ACCOUNT NAME',
-            'SHIPPER ATTENTION',
-            'SHIPPER ADDRESS 1',
-            'SHIPPER ADDRESS 2',
-            'SHIPPER CITY',
-            'SHIPPER STATE',
-            'SHIPPER ZIP CODE',
-            'SHIPPER REFERENCE',
-            'CONSIGNEE NAME',
-            'CONSIGNEE ATTENTION',
-            'CONSIGNEE ADDRESS 1',
-            'CONSIGNEE ADDRESS 2',
-            'CONSIGNEE CITY',
-            'CONSIGNEE STATE',
-            'CONSIGNEE ZIP CODE',
-            'CONSIGNEE COUNTRY CODE',
-            'THIRD PARTY ACCOUNT #',
-            'THIRD PARTY ACCOUNT NAME',
-            'THIRD PARTY ADDRESS',
-            'THIRD PARTY ADDRESS.1',
-            'THIRD PARTY CITY',
-            'THIRD PARTY STATE',
-            'THIRD PARTY ZIP CODE',
-            'SHIPMENT DATE',
-            'PO #',
-            'CUST INV #',
-            'DEPT #',
-            'PRODUCT CODE',
-            'ZONE',
-            'BILLED WEIGHT',
-            'ACTUAL WEIGHT',
-            'DIMENSIONAL WEIGHT',
-            'PIECES',
-            'DIMENSIONS',
-            'BASE CHARGE TYPE',
-            'SHIPMENT TOTAL',
-            'BASE CHARGE AMOUNT',
-            'CHARGE 1 TYPE',
-            'CHARGE 1 AMT',
-            'CHARGE 2 TYPE',
-            'CHARGE 2 AMT',
-            'CHARGE 3 TYPE',
-            'CHARGE 3 AMT',
-            'CHARGE 4 TYPE',
-            'CHARGE 4 AMT',
-            'CHARGE 5 TYPE',
-            'CHARGE 5 AMT',
-            'CHARGE 6 TYPE',
-            'CHARGE 6 AMT',
-            'CHARGE 7 TYPE',
-            'CHARGE 7 AMT',
-            'CHARGE 8 TYPE',
-            'CHARGE 8 AMT',
-            'CREDIT 1 DESCRIPTION',
-            'CREDIT 1 AMT',
-            'CREDIT 2 DESCRIPTION',
-            'CREDIT 2 AMT',
-            'CREDIT 3 DESCRIPTION',
-            'CREDIT 3 AMT',
-            'REFERENCE 2',
-            'REFERENCE 3',
-            'REFERENCE 4',
-            'REFERENCE 5',
-            'CUSTOMERID',
-            'SCAC',
-            'CLASS',
-            'CHARGENOTES',
-            'RECEIVEDBY',
-            'RECEIVEDATE',
-            'FULL_NAME',
-            'EMAIL'
-        )
+        self.field_names = [
+            "INVOICE #",
+            "INVOICE DATE",
+            "AIRBILL #",
+            "BILL OF LADING",
+            "SHIPPER ACCOUNT #",
+            "SHIPPER ACCOUNT NAME",
+            "SHIPPER ATTENTION",
+            "SHIPPER ADDRESS 1",
+            "SHIPPER ADDRESS 2",
+            "SHIPPER CITY",
+            "SHIPPER STATE",
+            "SHIPPER ZIP CODE",
+            "SHIPPER REFERENCE",
+            "CONSIGNEE NAME",
+            "CONSIGNEE ATTENTION",
+            "CONSIGNEE ADDRESS 1",
+            "CONSIGNEE ADDRESS 2",
+            "CONSIGNEE CITY",
+            "CONSIGNEE STATE",
+            "CONSIGNEE ZIP CODE",
+            "CONSIGNEE COUNTRY CODE",
+            "THIRD PARTY ACCOUNT #",
+            "THIRD PARTY ACCOUNT NAME",
+            "THIRD PARTY ADDRESS",
+            "THIRD PARTY ADDRESS.1",
+            "THIRD PARTY CITY",
+            "THIRD PARTY STATE",
+            "THIRD PARTY ZIP CODE",
+            "SHIPMENT DATE",
+            "PO #",
+            "CUST INV #",
+            "DEPT #",
+            "PRODUCT CODE",
+            "ZONE",
+            "BILLED WEIGHT",
+            "ACTUAL WEIGHT",
+            "DIMENSIONAL WEIGHT",
+            "PIECES",
+            "DIMENSIONS",
+            "BASE CHARGE TYPE",
+            "SHIPMENT TOTAL",
+            "BASE CHARGE AMOUNT",
+            "CHARGE 1 TYPE",
+            "CHARGE 1 AMT",
+            "CHARGE 2 TYPE",
+            "CHARGE 2 AMT",
+            "CHARGE 3 TYPE",
+            "CHARGE 3 AMT",
+            "CHARGE 4 TYPE",
+            "CHARGE 4 AMT",
+            "CHARGE 5 TYPE",
+            "CHARGE 5 AMT",
+            "CHARGE 6 TYPE",
+            "CHARGE 6 AMT",
+            "CHARGE 7 TYPE",
+            "CHARGE 7 AMT",
+            "CHARGE 8 TYPE",
+            "CHARGE 8 AMT",
+            "CREDIT 1 DESCRIPTION",
+            "CREDIT 1 AMT",
+            "CREDIT 2 DESCRIPTION",
+            "CREDIT 2 AMT",
+            "CREDIT 3 DESCRIPTION",
+            "CREDIT 3 AMT",
+            "REFERENCE 2",
+            "REFERENCE 3",
+            "REFERENCE 4",
+            "REFERENCE 5",
+            "CUSTOMERID",
+            "SCAC",
+            "CLASS",
+            "CHARGENOTES",
+            "RECEIVEDBY",
+            "RECEIVEDATE",
+            "FULL_NAME",
+            "EMAIL",
+            "DATABASE_NAME"
+        ]
         self.csv_name = csv_name
         self.logo_url = logo_url
 
@@ -111,29 +112,70 @@ class CSVParser:
                     header_skipped = True
                     continue  # Skip the header row
 
-                # Extract charge details from columns
-                charges = []
-                for i in range(1, 6):
-                    old_charge_type = f'CHARGE {i} TYPE'
-                    old_charge_amt = f'CHARGE {i} AMT'
-                    new_charge_type = row.get(old_charge_type, '')
-                    new_charge_amt = row.get(old_charge_amt, '')
-                    if new_charge_type and new_charge_amt:
-                        charges.append({
-                            'name': new_charge_type,
+                # Initialize an empty items list for each invoice
+                items = []
+
+                # Define the columns for charge types and amounts
+                charge_columns = [
+                    ("CHARGE 1 TYPE", "CHARGE 1 AMT"),
+                    ("CHARGE 2 TYPE", "CHARGE 2 AMT"),
+                    ("CHARGE 3 TYPE", "CHARGE 3 AMT"),
+                    ("CHARGE 4 TYPE", "CHARGE 4 AMT"),
+                    ("CHARGE 5 TYPE", "CHARGE 5 AMT"),
+                    ("CHARGE 6 TYPE", "CHARGE 6 AMT"),
+                    ("CHARGE 7 TYPE", "CHARGE 7 AMT"),
+                    ("CHARGE 8 TYPE", "CHARGE 8 AMT")
+                ]
+
+                # Iterate through charge columns to extract charges
+                for charge_type_column, charge_amt_column in charge_columns:
+                    charge_type = row[charge_type_column]
+                    charge_amt = row[charge_amt_column]
+
+                    if charge_type and charge_amt:
+                        # Add charge item with the extracted charge type and amount
+                        items.append({
+                            'name': charge_type,
                             'quantity': 1,
-                            'unit_cost': float(new_charge_amt)
+                            'unit_cost': float(charge_amt)
                         })
 
+                # Add the Weight item using "BILLED WEIGHT" if it's not empty
+                billed_weight_str = row['BILLED WEIGHT']
+                if billed_weight_str:
+                    billed_weight = float(billed_weight_str)
+                    items.append({
+                        'name': 'Weight',
+                        'quantity': 1,
+                        'unit_cost': billed_weight
+                    })
+
+                # Add the Base Transportation item
+                base_charge_amount_str = row['BASE CHARGE AMOUNT']
+                if base_charge_amount_str:
+                    base_charge_amount = float(base_charge_amount_str)
+                    items.append({
+                        'name': 'Base Transportation',
+                        'quantity': 1,
+                        'unit_cost': base_charge_amount
+                    })
+
+                # Add the "Reporting fee $ 2.50" item
+                items.append({
+                    'name': 'Reporting fee',
+                    'quantity': 1,
+                    'unit_cost': 2.50
+                })
+
                 invoice_obj = Invoice(
-                    from_who=row['FULL_NAME'],  # Use 'FULL_NAME' as the key
-                    to_who=row['CONSIGNEE NAME'],  # Use 'CONSIGNEE NAME' as the key
+                    from_who=row['FULL_NAME'],
+                    to_who=row['CONSIGNEE NAME'],
                     logo=self.logo_url,
-                    number=row['INVOICE #'],  # Use 'INVOICE #' as the key
-                    date=row['INVOICE DATE'],  # Use 'INVOICE DATE' as the key
-                    due_date='',  # You can fill this in if you have it in your data
-                    items=charges,  # Use the extracted charges as items
-                    notes=''  # You can fill this in if you have it in your data
+                    number=row['INVOICE #'],
+                    date=row['INVOICE DATE'],
+                    due_date='',
+                    items=items,
+                    notes=''
                 )
                 current_csv.append(invoice_obj)
         return current_csv
@@ -159,7 +201,7 @@ class ApiConnector:
         if r.status_code == 200 or r.status_code == 201:
             pdf = r.content
             current_time = datetime.now().strftime("%Y%m%d%H%M%S")
-            invoice_name = f"{invoice.number}_{current_time}_invoice.pdf"  # Unique filename based on timestamp
+            invoice_name = f"{invoice.number}_{current_time}_invoice.pdf"
             invoice_path = os.path.join(self.output_directory, invoice_name)
             with open(invoice_path, 'wb') as f:
                 typer.echo(f"Generate invoice for {invoice_name}")
@@ -169,12 +211,11 @@ class ApiConnector:
             typer.echo("Fail :", r.text)
 
 def main(csv_name: str = typer.Argument('your_output.csv')):
-    # Check if the output directory exists, and if not, create it
     output_directory = 'D:\GitHub\Freelancer\InvoicesGenerator\invoices'
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
-    
-    logo_url = 'https://i.ibb.co/ZJLQJmb/selfmade-black.jpg'  # URL of the logo image
+
+    logo_url = 'https://i.ibb.co/ZJLQJmb/selfmade-black.jpg'
     typer.echo(f"Running script with - {csv_name}")
     csv_reader = CSVParser(csv_name, logo_url)
     array_of_invoices = csv_reader.get_array_of_invoices()
