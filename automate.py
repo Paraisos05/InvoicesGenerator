@@ -133,6 +133,10 @@ class CSVParser:
                     charge_amt = row[charge_amt_column]
 
                     if charge_type and charge_amt:
+                        # Rename "Additional Handling - Length+Girth" to "Additional Surcharges"
+                        if charge_type == "Additional Handling - Length+Girth":
+                            charge_type = "Additional Surcharges"
+
                         # Add charge item with the extracted charge type and amount
                         items.append({
                             'name': charge_type,
