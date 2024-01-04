@@ -2,7 +2,7 @@ import pandas as pd
 import pyodbc
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv('11_07_2023-61900002XL07.csv')
+df = pd.read_csv('archivo_sin_comillas.csv')
 
 # Define a function to get FULL_NAME, EMAIL, and DATABASE_NAME based on tracking_number
 def get_full_name_email(tracking_number, connection_string, database_name):

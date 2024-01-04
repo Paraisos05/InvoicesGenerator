@@ -175,7 +175,7 @@ class CSVParser:
                     from_who=row['FULL_NAME'],
                     to_who=row['CONSIGNEE NAME'],
                     logo=self.logo_url,
-                    number=row['INVOICE #'],
+                    number=row['SHIPPER REFERENCE'],
                     date=row['INVOICE DATE'],
                     due_date='',
                     items=items,
@@ -219,7 +219,7 @@ def main(csv_name: str = typer.Argument('your_output.csv')):
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
 
-    logo_url = 'https://i.ibb.co/ZJLQJmb/selfmade-black.jpg'
+    logo_url = 'https://www.safetysign.com/images/source/large-images/F4760.png'
     typer.echo(f"Running script with - {csv_name}")
     csv_reader = CSVParser(csv_name, logo_url)
     array_of_invoices = csv_reader.get_array_of_invoices()
