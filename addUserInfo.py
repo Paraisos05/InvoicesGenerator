@@ -1,10 +1,15 @@
 import pandas as pd
 import pyodbc
+from io import StringIO
 
-# Read the CSV file into a DataFrame
-df = pd.read_csv('archivo_sin_comillas.csv')
+# Leer el archivo CSV eliminando las comillas alrededor de cada fila
+with open('archiSinComillas.csv', 'r') as file:
+    lines = [line.strip('"') for line in file]
 
-# Define a function to get FULL_NAME, EMAIL, and DATABASE_NAME based on tracking_number
+# Crear un nuevo DataFrame a partir de las líneas corregidas
+df = pd.read_csv(StringIO('\n'.join(lines)))
+
+# Define una función para obtener FULL_NAME, EMAIL y DATABASE_NAME basados en el número de seguimiento
 def get_full_name_email(tracking_number, connection_string, database_name):
     conn = pyodbc.connect(connection_string)
     sql_query = f"""
@@ -19,12 +24,12 @@ def get_full_name_email(tracking_number, connection_string, database_name):
     else:
         return None, None, None  # Return None for all values if no rows found or missing columns
 
-# Create new columns to store FULL_NAME, EMAIL, and DATABASE_NAME
+# Crear nuevas columnas para almacenar FULL_NAME, EMAIL y DATABASE_NAME
 df['FULL_NAME'] = ''
 df['EMAIL'] = ''
 df['DATABASE_NAME'] = ''
 
-# Define connection strings and corresponding database names
+# Define cadenas de conexión y nombres de bases de datos correspondientes
 connections_info = [
     {
         'connection_string': 'Driver={SQL Server};Server=localhost;Database=esurex;Trusted_Connection=yes;',
@@ -42,12 +47,12 @@ connections_info = [
         'connection_string': 'Driver={SQL Server};Server=localhost;Database=z2b2;Trusted_Connection=yes;',
         'database_name': 'z2b2'
     },
-    # Add connection strings and database names for the other databases here
+    # Agregar cadenas de conexión y nombres de bases de datos para las otras bases de datos aquí
 ]
 
-# Loop through each row in the DataFrame
+# Recorrer cada fila en el DataFrame
 for index, row in df.iterrows():
-    tracking_number = row['AIRBILL #']  # Replace 'AIRBILL #' with your actual column name
+    tracking_number = row['AIRBILL #']  # Reemplazar 'AIRBILL #' con el nombre de columna real
     for connection_info in connections_info:
         full_name, email, database_name = get_full_name_email(
             tracking_number,
@@ -58,7 +63,7 @@ for index, row in df.iterrows():
             df.at[index, 'FULL_NAME'] = full_name
             df.at[index, 'EMAIL'] = email
             df.at[index, 'DATABASE_NAME'] = database_name
-            break  # Exit the loop once data is found from one database
+            break  # Salir del bucle una vez que se encuentren datos en una base de datos
 
-# Save the updated DataFrame to a new CSV file
-df.to_csv('your_output.csv', index=False)
+# Guardar el DataFrame actualizado en un nuevo archivo CSV
+df.to_csv('tu_output.csv', index=False)
