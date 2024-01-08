@@ -1,10 +1,9 @@
 import requests
 from dataclasses import dataclass
-from typing import List
+from typing import List, Dict
 import os
 import csv
 import typer
-import json
 from datetime import datetime
 
 @dataclass
@@ -102,86 +101,95 @@ class CSVParser:
         self.csv_name = csv_name
         self.logo_url = logo_url
 
+        self.logo_mapping = {
+            "esurex": 'https://esurex.com/App_Themes/Standard/images/logo-footer.png',
+            "transurit": 'https://transurit.com/App_Themes/Standard/images/logo-header.png',
+            "assurem": 'https://assurem.com/App_Themes/Standard/images/logo.png',
+            "z2b2": 'https://z2b2.com/wp-content/uploads/2022/01/z2b2-logo-copy-4-1-e1644489368309-300x77.png',
+            "default": 'https://www.safetysign.com/images/source/large-images/F4760.png'
+        }
+
     def get_array_of_invoices(self) -> List[Invoice]:
         with open(self.csv_name, 'r') as f:
             reader = csv.DictReader(f, self.field_names)
-            current_csv = []
-            header_skipped = False  # Flag to skip the header row
+            invoices_by_user = {}
+            header_skipped = False
+
             for row in reader:
                 if not header_skipped:
                     header_skipped = True
-                    continue  # Skip the header row
+                    continue
 
-                # Initialize an empty items list for each invoice
+                full_name = row['FULL_NAME']
+                if full_name not in invoices_by_user:
+                    invoices_by_user[full_name] = []
+
+                invoices_by_user[full_name].append(row)
+
+            current_csv = []
+            for full_name, rows in invoices_by_user.items():
+                total_base_charge = 0
                 items = []
+                processed_airbills = set()
 
-                # Define the columns for charge types and amounts
-                charge_columns = [
-                    ("CHARGE 1 TYPE", "CHARGE 1 AMT"),
-                    ("CHARGE 2 TYPE", "CHARGE 2 AMT"),
-                    ("CHARGE 3 TYPE", "CHARGE 3 AMT"),
-                    ("CHARGE 4 TYPE", "CHARGE 4 AMT"),
-                    ("CHARGE 5 TYPE", "CHARGE 5 AMT"),
-                    ("CHARGE 6 TYPE", "CHARGE 6 AMT"),
-                    ("CHARGE 7 TYPE", "CHARGE 7 AMT"),
-                    ("CHARGE 8 TYPE", "CHARGE 8 AMT")
-                ]
+                for row in rows:
+                    base_charge = float(row['BASE CHARGE AMOUNT']) if row['BASE CHARGE AMOUNT'] else 0
+                    total_base_charge += base_charge
 
-                # Iterate through charge columns to extract charges
-                for charge_type_column, charge_amt_column in charge_columns:
-                    charge_type = row[charge_type_column]
-                    charge_amt = row[charge_amt_column]
+                    airbill_number = row['AIRBILL #']
+                    if airbill_number and airbill_number not in processed_airbills:
+                        processed_airbills.add(airbill_number)
+                        item_name = f"Airbill: {airbill_number}"
+                    else:
+                        item_name = "Other Charges"
 
-                    if charge_type and charge_amt:
-                        # Rename "Additional Handling - Length+Girth" to "Additional Surcharges"
-                        if charge_type == "Additional Handling - Length+Girth":
-                            charge_type = "Additional Surcharges"
+                    for i in range(1, 9):
+                        charge_type_key = f"CHARGE {i} TYPE"
+                        charge_amt_key = f"CHARGE {i} AMT"
+                        charge_type = row[charge_type_key]
+                        charge_amt = row[charge_amt_key]
 
-                        # Add charge item with the extracted charge type and amount
-                        items.append({
-                            'name': charge_type,
-                            'quantity': 1,
-                            'unit_cost': float(charge_amt)
-                        })
+                        if charge_type and charge_amt:
+                            charge_amt_float = float(charge_amt)
+                            items.append({
+                                'name': f"{item_name} - {charge_type}",
+                                'quantity': 1,
+                                'unit_cost': charge_amt_float
+                            })
 
-                # Add the Weight item using "BILLED WEIGHT" if it's not empty
-                billed_weight_str = row['BILLED WEIGHT']
-                if billed_weight_str:
-                    billed_weight = float(billed_weight_str)
+                if total_base_charge > 0:
                     items.append({
-                        'name': 'Weight',
+                        'name': 'Total Base Charge Amount',
                         'quantity': 1,
-                        'unit_cost': billed_weight
+                        'unit_cost': total_base_charge
                     })
 
-                # Add the Base Transportation item
-                base_charge_amount_str = row['BASE CHARGE AMOUNT']
-                if base_charge_amount_str:
-                    base_charge_amount = float(base_charge_amount_str)
-                    items.append({
-                        'name': 'Base Transportation',
-                        'quantity': 1,
-                        'unit_cost': base_charge_amount
-                    })
-
-                # Add the "Reporting fee $ 2.50" item
+                num_unique_airbills = len(processed_airbills)
+                reporting_fee = 2.5 * num_unique_airbills
                 items.append({
                     'name': 'Reporting fee',
                     'quantity': 1,
-                    'unit_cost': 2.50
+                    'unit_cost': reporting_fee
+                })
+
+                items.append({
+                    'name': 'Insured Value',
+                    'quantity': 1,
+                    'unit_cost': 0.00
                 })
 
                 invoice_obj = Invoice(
-                    from_who=row['FULL_NAME'],
-                    to_who=row['CONSIGNEE NAME'],
-                    logo=self.logo_url,
-                    number=row['SHIPPER REFERENCE'],
-                    date=row['INVOICE DATE'],
+                    from_who=f"{rows[0]['FULL_NAME']} \n Email:{rows[0]['EMAIL']}, \n Service:{rows[0]['SCAC']}",
+                    to_who=f"{rows[0]['CONSIGNEE ATTENTION']}\n{rows[0]['CONSIGNEE ADDRESS 1']}\n{rows[0]['CONSIGNEE ADDRESS 2']}",
+                    logo=self.logo_mapping.get(rows[0]['DATABASE_NAME'].lower(), self.logo_mapping['default']),
+                    number=rows[0]['DATABASE_NAME'],
+                    date=rows[0]['INVOICE DATE'],
                     due_date='',
                     items=items,
                     notes=''
                 )
                 current_csv.append(invoice_obj)
+
         return current_csv
 
 class ApiConnector:
@@ -212,9 +220,9 @@ class ApiConnector:
                 f.write(pdf)
             typer.echo("File Saved")
         else:
-            typer.echo("Fail :", r.text)
+            typer.echo(f"Fail: {r.text}")
 
-def main(csv_name: str = typer.Argument('your_output.csv')):
+def main(csv_name: str = typer.Argument('tu_output.csv')):
     output_directory = 'D:\GitHub\Freelancer\InvoicesGenerator\invoices'
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)

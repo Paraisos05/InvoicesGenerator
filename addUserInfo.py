@@ -37,7 +37,7 @@ connections_info = [
     },
     {
         'connection_string': 'Driver={SQL Server};Server=localhost;Database=AssuremPro-bak27Dec2023;Trusted_Connection=yes;',
-        'database_name': 'AssuremPro-bak27Dec2023'
+        'database_name': 'assurem'
     },
     {
         'connection_string': 'Driver={SQL Server};Server=localhost;Database=transurit;Trusted_Connection=yes;',
